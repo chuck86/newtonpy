@@ -7,3 +7,5 @@ before_install:
     - sudo apt-get install -qq python3-numpy python3-scipy
     - pip install nose2 codecov cov-core
 script: nose2 --with-coverage
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
