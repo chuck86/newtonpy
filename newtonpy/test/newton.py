@@ -11,6 +11,7 @@ def newton(fun, gradient, init_value):
     df = gradient(x)
     error = abs(fun(x))
     iter = 0
+    # aaa
     while error > tol and iter < 100:
         iter += 1
         dx = f/df
